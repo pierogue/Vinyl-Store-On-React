@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat-light;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppHeader {
+    height: 300px;
+    background-color: gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ButtonContainer {
+    display: flex;
+    flex-flow : row, wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ButtonContainer button {
+    flex-basis: 200px;
+    flex-grow: 1;
+    height: 40px;
+    background-color: white;
+    border: 0.5px rgb(220,220,220) solid;
+    font-family: Montserrat-light;
+    font-size: large;
+    transition: background-color 0.1s linear;
+    cursor:pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.ButtonContainer button:active {
+    background-color: rgb(220, 220, 220);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HeaderCover {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 260px;
+    background-image: url(./imgs/backgrounds/record-shop-mick-haupt-unsplash.jpg);
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.HeaderCover img {
+    align-content: center;
+}
+
+.HeaderControl {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80px;
+    height: 100%;
+    background-color: rgb(240, 240, 240, 0.2);
+    justify-content: space-around;   
+}
+
+.HeaderControl div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+
+.HeaderControl div:active {
+    background-color: rgb(220,220,220);
+}
+
+.HeaderControl div img {
+    width: 50px;
+    height: 50px;
+}
+
+.CatalogContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.CatalogContainer .CatalogProduct{
+    width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0px;
+    padding: 20px 0px;
+    cursor: pointer;
+    transition: box-shadow linear 0.2s ;
+}
+
+.CatalogContainer .CatalogProduct span {
+    margin-bottom: 2px;
+}
+
+.CatalogContainer .CatalogProduct:hover{
+    box-shadow: black 0px 0px 3px 0px;
+}
+
+.AppFooter{
+    background-color:black;
+    height: 200px;
+}
+
+@font-face {
+    font-family: Montserrat-light;
+    src: url('./fonts/Montserrat-Light.otf');
 }
