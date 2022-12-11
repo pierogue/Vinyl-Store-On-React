@@ -8,12 +8,19 @@ import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './counter.js'
 import searchReducer from './searchSlice.js'
 import catalogReducer from './catalogSlice';
+import cartReducer from './cartSlice'
+import userReducer from './userSlice'
+import authReducer from './authSlice'
 
+console.log(process.env.REACT_APP_API_URL);
 const store = configureStore({
   reducer: {
     counter: counterReducer,
     search : searchReducer,
     catalog : catalogReducer,
+    cart : cartReducer,
+    user : userReducer,
+    auth : authReducer,
   },
 });
 

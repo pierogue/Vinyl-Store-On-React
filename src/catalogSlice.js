@@ -16,138 +16,138 @@ import morrisonhotel from './imgs/vinyl/morrison-hotel.jpg';
 import closer from './imgs/vinyl/closer.jpg';
 import igor from './imgs/vinyl/igor.jpg';
 
-const contentVinyl = [
-	{
-		name : "m b v",
-		author : 'My Bloody Valentine',
-		year : 2013,
-		price : 179,
-		genre : 'Rock',
-		image : mbv,
-		amount : 10
-	},
-	{
-		name: "Flower Boy",
-		author : "Tyler, The Creator",
-		year : 2017,
-		price : 179,
-		genre : "Rap & Hip-Hop",
-		image : flowerboy,
-		amount : 21
-	},
-	{
-		name : "Parklife",
-		author : "Blur",
-		year : 1994,
-		price : 179,
-		genre : "Popular",
-		image : parklife,
-		amount : 9
-	},
-	{
-		name : "Hatful Of Hollow",
-		author : "The Smiths",
-		year : 1984,
-		price : 149,
-		genre : "Rock",
-		image : hatfulofhollow,
-		amount : 11
-	},
-	{
-		name : "ChangeOneBowie",
-		author : "David Bowie",
-		year : 1976,
-		price : 179,
-		genre : "Rock",
-		image : changeonebowie,
-		amount : 23
-	},
-	{
-		name : "Legend",
-		author : "Bob Marley & The Wailers",
-		year : 1984,
-		price : 129,
-		genre : "Reggae",
-		image : legend,
-		amount : 18
-	},
-	{
-		name : "Unknown Pleasures",
-		author : "Joy Division",
-		year : 1979,
-		price : 169,
-		genre : "Post-Punk",
-		image : unknownpleasures,
-		amount : 19
-	},
-	{
-		name : "Animals",
-		author : "Pink Floyd",
-		year : 1977,
-		price : 129,
-		genre : "Rock",
-		image : animals,
-		amount : 25
-	},
-	{
-		name : "Morrrison Hotel",
-		author : "The Doors",
-		year : 1970,
-		price : 149,
-		genre : "Rock",
-		image : morrisonhotel,
-		amount : 24
-	},
-	{
-		name : "Closer",
-		author : "Joy Division",
-		year : 1980,
-		price : 119,
-		genre : "New Wave",
-		image : closer,
-		amount : 17
-	},
-	{
-		name : "Igor",
-		author : "Tyler, The Creator",
-		year : 2019,
-		price : 169,
-		genre : "Hip-Hop",
-		image : igor,
-		amount : 22
-	},
-]
+// export const contentVinyl = [
+// 	{
+// 		name : "m b v",
+// 		author : 'My Bloody Valentine',
+// 		year : 2013,
+// 		price : 179,
+// 		genre : 'Rock',
+// 		image : mbv,
+// 		amount : 10
+// 	},
+// 	{
+// 		name: "Flower Boy",
+// 		author : "Tyler, The Creator",
+// 		year : 2017,
+// 		price : 179,
+// 		genre : "Rap & Hip-Hop",
+// 		image : flowerboy,
+// 		amount : 21
+// 	},
+// 	{
+// 		name : "Parklife",
+// 		author : "Blur",
+// 		year : 1994,
+// 		price : 179,
+// 		genre : "Popular",
+// 		image : parklife,
+// 		amount : 9
+// 	},
+// 	{
+// 		name : "Hatful Of Hollow",
+// 		author : "The Smiths",
+// 		year : 1984,
+// 		price : 149,
+// 		genre : "Rock",
+// 		image : hatfulofhollow,
+// 		amount : 11
+// 	},
+// 	{
+// 		name : "ChangeOneBowie",
+// 		author : "David Bowie",
+// 		year : 1976,
+// 		price : 179,
+// 		genre : "Rock",
+// 		image : changeonebowie,
+// 		amount : 23
+// 	},
+// 	{
+// 		name : "Legend",
+// 		author : "Bob Marley & The Wailers",
+// 		year : 1984,
+// 		price : 129,
+// 		genre : "Reggae",
+// 		image : legend,
+// 		amount : 18
+// 	},
+// 	{
+// 		name : "Unknown Pleasures",
+// 		author : "Joy Division",
+// 		year : 1979,
+// 		price : 169,
+// 		genre : "Post-Punk",
+// 		image : unknownpleasures,
+// 		amount : 19
+// 	},
+// 	{
+// 		name : "Animals",
+// 		author : "Pink Floyd",
+// 		year : 1977,
+// 		price : 129,
+// 		genre : "Rock",
+// 		image : animals,
+// 		amount : 25
+// 	},
+// 	{
+// 		name : "Morrison Hotel",
+// 		author : "The Doors",
+// 		year : 1970,
+// 		price : 149,
+// 		genre : "Rock",
+// 		image : morrisonhotel,
+// 		amount : 24
+// 	},
+// 	{
+// 		name : "Closer",
+// 		author : "Joy Division",
+// 		year : 1980,
+// 		price : 119,
+// 		genre : "New Wave",
+// 		image : closer,
+// 		amount : 17
+// 	},
+// 	{
+// 		name : "Igor",
+// 		author : "Tyler, The Creator",
+// 		year : 2019,
+// 		price : 169,
+// 		genre : "Hip-Hop",
+// 		image : igor,
+// 		amount : 22
+// 	},
+// ]
 
 
-const contentPlayers = [
-    {
-      name:"Crosley Cruiser Deluxe Black",
-      price:510,
-      amount:48,
-      image: crosley,
-    },
-    {
-      name:"Audio-Technica AT-LP60X Bluetooth",
-      price:1049,
-      amount:23,
-      image: audio,
-    },
-    {
-      name:'ION Mustang LP Red',
-      price:819,
-      amount:19,
-      image: ion,
-    },
-    {
-      name:'Pro-Ject Primary E Phono Black',
-      price:1349,
-      amount:54,
-      image: project,
-    },
-  ];
+// export const contentPlayers = [
+//     {
+//       name:"Crosley Cruiser Deluxe Black",
+//       price:510,
+//       amount:48,
+//       image: crosley,
+//     },
+//     {
+//       name:"Audio-Technica AT-LP60X Bluetooth",
+//       price:1049,
+//       amount:23,
+//       image: audio,
+//     },
+//     {
+//       name:'ION Mustang LP Red',
+//       price:819,
+//       amount:19,
+//       image: ion,
+//     },
+//     {
+//       name:'Pro-Ject Primary E Phono Black',
+//       price:1349,
+//       amount:54,
+//       image: project,
+//     },
+//   ];
 
 const initialState = {
-	value: contentPlayers,
+	value: [],
 };
 
 const catalogSlice = createSlice({
@@ -221,18 +221,33 @@ const catalogSlice = createSlice({
 					break;
 			}
 		},
-		catalogTypeSet : (state, action) => {
-			if(state.value !== contentVinyl && action.payload === 'vinyl'){
-				state.value = contentVinyl;
-			}
-			else if(state.value !== contentPlayers && action.payload === 'players'){
-				state.value = contentPlayers;
-			}
+		// catalogTypeSet : (state, action) => {
+		// 	if(action.payload === 'vinyl'){
+		// 		let res = [];
+		// 		for(let i of state.value){
+		// 			if(i.catalogType === 'vinyl'){
+		// 				res.push(i);
+		// 			}
+		// 		}
+		// 		state.value = res;
+		// 	}
+		// 	else if(action.payload === 'players'){
+		// 		let res = [];
+		// 		for(let i of state.value){
+		// 			if(i.catalogType === 'players'){
+		// 				res.push(i);
+		// 			}
+		// 		}
+		// 		state.value = res;
+		// 	}
+		// },
+		catalogSet: (state, action) => {
+			state.value = action.payload;
 		}
 	}
 },
 )
 
 
-export const { sortSet, catalogTypeSet } = catalogSlice.actions;
+export const { sortSet, catalogTypeSet, catalogSet } = catalogSlice.actions;
 export default catalogSlice.reducer;

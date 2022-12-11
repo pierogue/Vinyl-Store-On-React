@@ -1,8 +1,9 @@
+import React from 'react'   
 import './App.css'
 import {searchSet} from './searchSlice';
 import {sortSet} from './catalogSlice';
 import { useSelector, useDispatch } from 'react-redux';
-
+import { catalogTypeSet} from './catalogSlice'
 
 function SearchLine(props){
 

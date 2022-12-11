@@ -15,6 +15,20 @@
     flex-flow : row, wrap;
 }
 
+.ButtonContainer a {
+    flex-basis: 200px;
+    flex-grow: 1;
+    height: 40px;
+    background-color: white;
+    font-family: Montserrat-light;
+    font-size: large;
+    transition: background-color 0.1s linear;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .ButtonContainer button {
     flex-basis: 200px;
     flex-grow: 1;
@@ -80,6 +94,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 10px 0px;
 }
 
 .CatalogContainer .CatalogProduct{
@@ -92,6 +107,10 @@
     transition: box-shadow linear 0.2s ;
 }
 
+.CatalogContainer .CatalogProduct .ProductImage{
+    transition: all linear 0.2s;
+}
+
 .CatalogContainer .CatalogProduct span {
     margin-bottom: 2px;
 }
@@ -100,10 +119,238 @@
     box-shadow: black 0px 0px 3px 0px;
 }
 
+.CatalogContainer .CatalogProduct:hover .ProductImage {
+    opacity: 0.2;
+}
+
+.CatalogContainer .CatalogProduct .AddIcon{
+    opacity: 0;
+    /* display: none; */
+    position: absolute;
+    width: 120px;
+    transition: all ease-in 0.1s;
+}
+
+.CatalogContainer .CatalogProduct:hover .AddIcon{
+    opacity: 1;
+    display: block;
+}
+
+.CatalogContainer .CatalogProduct:active .AddIcon{
+    width: 150px;
+}
+
+.CartContainer {
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+
+.CartContainer .CartBlock {
+    flex-grow: 1;
+    flex-basis: 400px;
+    min-height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-flow: column;
+    overflow:scroll;
+    overflow-x: hidden;
+    flex-shrink: 1;
+    margin: 20px;
+}
+
+.CartBlock .CartProduct {
+    display: grid;
+    grid-template-columns: 90px calc(100% - 140px) 50px;
+    grid-template-rows: 30px 30px 30px; 
+    gap: 5px;
+    margin: 10px 20px;
+    /* border-bottom: #555 solid 1px; */
+    border-top: #555 solid 1px;
+}
+
+.CartContainer .CartBlock .CartProduct img {
+    width:80px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: auto;
+}
+
+.CartProduct .ProductAuthor {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.CartProduct .ProductInformation {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.CartProduct button {
+    border: none;
+    background-color: white;
+}
+
+.CartProduct button:active {
+    background-color: #555;
+}
+
+.ProductInformation .ProductPrice {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.CartProduct .ProductChangeCount {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end : 4;
+}
+
+.ProductChangeCount button {
+    width: 50%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.CartProduct .ProductCount {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end : 4;
+}
+
+.CartProduct .DeleteButton {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end : 4;
+}
+
+.CartContainer .OrderBlock {
+    flex-grow: 1;
+    flex-basis: 600px;
+    width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.OrderBlock form {
+    margin: auto;
+    width: 600px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+form label {
+    font-family: Montserrat-light;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+}
+
+form div {
+    width: 280px;
+    margin: 3px;
+}
+
+form div span {
+    font-family: Montserrat-light;
+    font-size: 16px;
+}
+
+form div input {
+    width: 100%;
+    height: 30px;
+    font-family: Montserrat-light;
+}
+
+form input[type=radio] {
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    accent-color: black;
+}
+
+form input[type=submit] {
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Montserrat-light;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+form textarea {
+    height: 142px;
+    width: 100%;
+    resize: vertical;
+    max-height: 142px;
+    min-height: 30px;
+    font-family: Montserrat;
+    padding: 5px;
+}
+
+.UserForm {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.UserForm div {
+    margin: 5px;
+}
+
+.UserForm input {
+    width: 250px;
+    height: 30px;
+    font-family: Montserrat-light;
+}
+
+.UserForm button {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Montserrat-light;
+    font-weight: bold;
+    cursor:pointer;
+}
+
 .AppFooter{
     background-color:black;
     height: 200px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 @font-face {
     font-family: Montserrat-light;
